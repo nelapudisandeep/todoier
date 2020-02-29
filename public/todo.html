@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/todo.css">
+</head>
+<body>
+    <!-- mobile first content -->
+    <header>
+        <div class="menu-icon" id="open">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div id="close">
+            <div class="right bar "></div>
+            <div class="left bar "></div>
+        </div>
+        <div class="side-nav">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./todo.html">Todo</a></li>
+        </div>
+    </header>
+    <main>
+        <h1>Todo</h1>
+        <div id="error">
+            <p>Todo Submission Failed!</p>
+        </div>
+        <div id="success">
+            <p>Todo Submission Succeeded!</p>
+        </div>
+        <div class="enterTodo">
+            <input type="text" placeholder="Enter todo...">
+            <div class="dates">
+               <div class="line">
+                <label for="startDate">Start Date : </label>
+                <input type="date" placeholder="Start Date" id="startDate">
+               </div>
+                <div class="line">
+                    <label for="lastDate">Last Date : </label>
+                <input type="date" placeholder="Last Date" id="lastDate">
+                </div>
+            </div>
+            <input type="submit" value="Submit">
+        </div>
+        <button class="showTodos" id="showTodos">Show Todos</button>
+        <div class="todoList" id="todoList">
+        </div>
+    </main>
+    <script src="./js/react.js"></script>
+    <script src="./js/todo.js"></script>
+</body>
+</html>

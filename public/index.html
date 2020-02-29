@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Target - make it until you break it.</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <!-- mobile first content -->
+    <header>
+        <div class="menu-icon" id="open">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div id="close">
+            <div class="right bar "></div>
+            <div class="left bar "></div>
+        </div>
+        <div class="side-nav">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./todo.html">Todo</a></li>
+        </div>
+    </header>
+    <main>
+        <section class="first-section">
+            <div class="overlay">
+                <h1><span>Fight</span> not against others but with you first.</h1>
+                <p><span>Hardwork</span> with <span>perserverance</span> and dedication are always the best friends.</p>
+                <a class="showMore" id="showMore" href="https://www.youversion.com/" target="_blank">Learn More</a>
+            </div>
+        </section>
+        <section class="second-section">
+            <button id="undone">Undone Todos</button>
+            <div class="undone-tasks-in-database" id="listContainer">
+                
+            </div>
+        </section>
+    </main>
+    <script src="./js/react.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

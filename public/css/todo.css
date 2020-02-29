@@ -1,0 +1,141 @@
+main{
+    width:100%;
+    padding-top:2rem;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.enterTodo{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding:1rem 0;
+}
+input[type="text"]{
+    background:transparent;
+    border:none;
+    border-bottom:2px solid #ffc;
+    width:90%;
+    padding:0.2rem 0.5rem;
+    color:#fff;
+    outline: none;
+}
+input[type="text"]::placeholder{
+    color:#ccc;
+    font-weight: bold;
+}
+input[type="submit"]{
+    padding:0.5rem 1rem;
+    margin-top:1rem;
+    background:transparent;
+    border:2px solid transparent;
+    border-radius: 5px;
+    background:lightcoral;
+    color:#fff;
+    font-size:1.1rem;
+}
+.showTodos{
+    font-size:1.1rem;
+    padding:1rem 2rem;
+    border-radius: 5px;
+    margin:1rem;
+    border:2px solid transparent;
+    background:#fff;
+    color:lightcoral;
+}
+.todoList{
+    padding-top:1rem;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display:none;
+}
+.todoItem{
+    width:90%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0.4rem 0;
+    flex-direction: column;
+    color:#fff;
+    background:#333;
+    margin:0.1rem;
+    border-radius: 5px;
+}
+.todoItem>p{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0.5rem;
+}
+.todoItem >p span{
+    color:#ffc;
+    text-decoration: none;
+    border:2px solid #fff;
+    padding:0.2rem ;
+    border-radius:50% 50%;
+    font-size:0.75rem;
+}
+.info{
+    margin:0.1rem;
+    padding:0.4rem;
+    display: none;
+}
+.info p span{
+    text-decoration: none;
+    font-size:0.75rem;
+    font-weight: bold;
+}
+
+#error,#success{
+    width:90%;
+    padding:0.5rem;
+    text-align: center;
+    color:#fff;
+    border-radius:5px;
+    display:none;
+    position: absolute;
+    top:7vh;
+}
+#error{
+    background:rgba(255,0,0,0.4);
+}
+#success{
+    background:rgba(0,255,0,0.5);
+}
+main h1{
+    color:#fff;
+    margin:1rem;
+    text-decoration: underline;
+}
+input[type="date"]{
+    background:transparent;
+    color:#fff;
+    font-size:1.1rem;
+    margin:1rem 0;
+    padding:0.5rem 1rem;
+    border:2px solid #fff;
+}
+.dates{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+.line{
+    margin-top:1rem;
+    width:100%;
+    color:#fff;
+}
+
+#startDate,#lastDate{
+    width:100%;
+    flex:1;
+    padding-left:2rem;
+}
